@@ -41,8 +41,8 @@ endif()
 
 # This is a Windows-specific flag that enables error handling in host code
 if(WIN32)
-    set(PLATFORM_SPECIFIC_COMPILE_FLAGS "/EHsc /Qactypes /Wall /fp:precise -Xsfp-relaxed ")
-    set(PLATFORM_SPECIFIC_LINK_FLAGS "/Qactypes /fp:precise -Xsfp-relaxed ")
+    set(PLATFORM_SPECIFIC_COMPILE_FLAGS "/EHsc /Qactypes /Wall ")
+    set(PLATFORM_SPECIFIC_LINK_FLAGS "/Qactypes ")
 else()
     set(PLATFORM_SPECIFIC_COMPILE_FLAGS "-qactypes -Wall -fno-finite-math-only ")
     set(PLATFORM_SPECIFIC_LINK_FLAGS "")
